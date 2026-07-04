@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- Loading Screen -->
   <div id="loadingScreen" class="loading-screen">
     <div class="loading-inner">
       <div class="loading-glitch" data-text="UNIVERSAL CONVERTER PRO">UNIVERSAL CONVERTER PRO</div>
@@ -19,12 +18,10 @@
     </div>
   </div>
 
-  <!-- Matrix Rain Background -->
   <canvas id="matrixCanvas"></canvas>
 
   <div class="app-container">
 
-    <!-- Header -->
     <header class="app-header">
       <button id="sidebarToggle" class="icon-btn" aria-label="Buka menu" title="Menu (Esc untuk tutup)">
         <span class="burger"></span>
@@ -42,7 +39,6 @@
 
     <div class="app-body">
 
-      <!-- Sidebar Navigation -->
       <nav id="sidebar" class="sidebar">
         <ul class="menu-list">
           <li><button class="menu-item active" data-target="numberSystem"><span class="menu-icon">01</span>Sistem Bilangan</button></li>
@@ -61,10 +57,8 @@
       </nav>
       <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
-      <!-- Main Content -->
       <main class="content">
 
-        <!-- ============ SISTEM BILANGAN ============ -->
         <section id="numberSystem" class="tool-section active">
           <h2 class="section-title">Sistem Bilangan</h2>
           <p class="section-desc">Konversi realtime antara Biner, Desimal, Oktal, dan Heksadesimal.</p>
@@ -110,7 +104,6 @@
           </div>
         </section>
 
-        <!-- ============ MORSE ============ -->
         <section id="morseCode" class="tool-section">
           <h2 class="section-title">Kode Morse</h2>
           <p class="section-desc">Konversi teks ke kode Morse dan sebaliknya secara realtime.</p>
@@ -142,7 +135,6 @@
           </div>
         </section>
 
-        <!-- ============ ASCII ============ -->
         <section id="asciiTool" class="tool-section">
           <h2 class="section-title">ASCII Converter</h2>
           <p class="section-desc">Konversi karakter ke kode ASCII/Unicode desimal dan sebaliknya.</p>
@@ -174,7 +166,6 @@
           </div>
         </section>
 
-        <!-- ============ TEXT <-> BINARY ============ -->
         <section id="textBinary" class="tool-section">
           <h2 class="section-title">Text ↔ Binary</h2>
           <p class="section-desc">Konversi teks ke representasi biner 8-bit dan sebaliknya.</p>
@@ -204,9 +195,7 @@
             </div>
             <div id="tbHistory" class="history-box"></div>
           </div>
-        </section>
-
-        <!-- ============ BASE64 ============ -->
+        
         <section id="base64Tool" class="tool-section">
           <h2 class="section-title">Base64</h2>
           <p class="section-desc">Encode teks ke Base64 atau decode Base64 ke teks asli.</p>
@@ -239,7 +228,6 @@
           </div>
         </section>
 
-        <!-- ============ CAESAR CIPHER ============ -->
         <section id="caesarCipher" class="tool-section">
           <h2 class="section-title">Caesar Cipher</h2>
           <p class="section-desc">Enkripsi/dekripsi teks dengan pergeseran huruf (shift).</p>
@@ -275,7 +263,6 @@
           </div>
         </section>
 
-        <!-- ============ VIGENERE CIPHER ============ -->
         <section id="vigenereCipher" class="tool-section">
           <h2 class="section-title">Vigenère Cipher</h2>
           <p class="section-desc">Enkripsi/dekripsi teks menggunakan kata kunci (key).</p>
@@ -312,7 +299,6 @@
           </div>
         </section>
 
-        <!-- ============ ROMAN NUMERAL ============ -->
         <section id="romanNumeral" class="tool-section">
           <h2 class="section-title">Roman Numeral</h2>
           <p class="section-desc">Konversi angka Arab ↔ angka Romawi (1 - 3999).</p>
@@ -345,7 +331,6 @@
           </div>
         </section>
 
-        <!-- ============ KONVERSI SATUAN ============ -->
         <section id="unitConverter" class="tool-section">
           <h2 class="section-title">Konversi Satuan</h2>
           <p class="section-desc">Konversi realtime antar satuan Panjang, Berat, Suhu, Volume, Luas, Kecepatan, dan Waktu.</p>
@@ -397,10 +382,8 @@
     </div>
   </div>
 
-  <!-- Toast Container -->
   <div id="toastContainer" class="toast-container"></div>
 
-  <!-- Shortcut Info Modal -->
   <div id="shortcutModal" class="modal-overlay">
     <div class="modal-box glass-card">
       <h3 class="card-title">Shortcut Keyboard</h3>
@@ -415,7 +398,6 @@
     </div>
   </div>
 
-  <!-- Scripts (urutan penting: dependensi dimuat lebih dulu) -->
   <script src="matrix.js"></script>
   <script src="history.js"></script>
   <script src="copy.js"></script>
