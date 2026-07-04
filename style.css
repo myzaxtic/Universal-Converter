@@ -638,6 +638,31 @@ kbd{
   font-size: 0.8rem;
 }
 
+/* ============ Ad Container & Donate Link ============ */
+.ad-container{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px;
+  padding: 12px;
+  min-height: 250px;
+}
+
+.donate-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  color: var(--neon-2) !important;
+  border: 1px solid var(--glass-border);
+  text-decoration: none;
+}
+.donate-link:hover{
+  color: var(--text) !important;
+  background: var(--neon-dim);
+  border-color: var(--neon-soft);
+  padding-left: 18px;
+}
+
 /* ============ Responsive Sidebar (Mobile) ============ */
 @media (max-width: 860px){
   .sidebar{
